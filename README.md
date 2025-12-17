@@ -1,32 +1,39 @@
 # Student Transcript Management System
 
 ## 1. Project Overview
-This Python-based command-line application simulates a student transcript management system. It allows users to create, view, query, modify, and delete student records.
+The **Student Transcript Management System** is a Python-based command-line application that simulates a basic academic record management system. It allows users to create, view, query, modify, and delete student transcript records through a menu-driven interface.
 
-The system features integrated data structures (dictionaries/lists) and implements custom sorting algorithms for data visualization. All data is saved to a persistent `student.csv` file upon exit.
+The system uses Python data structures such as **lists** and **dictionaries**, and demonstrates fundamental **software engineering and data structure concepts**. Student records are stored persistently in a CSV file (`student.csv`) when the program exits.
+
 
 ## 2. Key Features
 
-* **CRUD Operations:** Create, Query (Read), Update, and Delete student records.
-* [cite_start]**Persistent Storage:** Records are automatically saved to `student.csv` [cite: 5] when the user chooses the 'SAVE AND QUIT' option.
-* **Custom Sorting:** Records can be displayed in a sorted order using two different algorithms:
-    * [cite_start]**Bubble Sort:** Used to sort records by **ID**[cite: 5].
-    * [cite_start]**Quick Sort:** Used to sort records by **Score**[cite: 5].
+- **CRUD Operations**
+  - Create new student records
+  - Read and query existing records
+  - Update student information
+  - Delete student records
+
+- **Persistent Storage**
+  - All student records are automatically saved to `student.csv` when the user selects **SAVE AND QUIT**
+
+- **Custom Sorting Algorithms**
+  - **Bubble Sort**: Sorts student records by **Student ID**
+  - **Quick Sort**: Sorts student records by **Score**
+
+- **Modular Program Structure**
+  - Code is divided into multiple modules (`main`, `menu`, `student`, `sorting`, `storage`) for better readability and maintainability
+
 
 ## 3. How to Run
 
 ### Requirements
-* Python 3.x (Tested with standard libraries)
+- Python **3.8 or higher**
+- No external libraries required (uses only Python standard library)
 
-### Execution
-1.  Ensure you have the `main.py` file in a directory.
-2.  Open your command-line interface (CLI) in that directory.
-3.  Run the application using the following command:
-    ```bash
-    python main.py
-    ```
-
-## 4. System Usage Flow
-The program begins with a welcome menu:
-
-**Author:** AHMED MD SHAKIL   
+### Execution Steps
+1. Clone or download this repository.
+2. Navigate to the project root directory.
+3. Run the application using the command:
+   ```bash
+   python src/main.py
